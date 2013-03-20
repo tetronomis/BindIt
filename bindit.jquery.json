@@ -1,0 +1,26 @@
+{
+    "name": "bindit",
+    "title": "BindIt",
+    "description": "A jQuery plugin to bind events with delay.",
+    "keywords": ["event", "bind", "delay"],
+    "version": "1.0.0",
+
+    "author": {
+        "name": "Opteemo",
+        "url": "http://github.com/opteemo"
+    },
+
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+
+    "homepage": "https://github.com/opteemo/bindit",
+    "bugs": "https://github.com/opteemo/bindit/issues",
+
+    "dependencies": {
+        "jquery": ">=1.0.1"
+    }
+}
