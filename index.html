@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opteemo - BindIt</title>
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css" media="all"/>
+
+        <script src="http://code.jquery.com/jquery-1.0.1.js"></script>
+        <script type="text/javascript" src="js/jquery.bindit.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <a href="/" class="logo">BindIt</a>
+            </header>
+
+            <div class="jumbotron">
+                <h1>
+                    <span>BindIt Plugin</span><br/>
+                    <span class="light">A jQuery plugin to bind with delay</span>
+                </h1>
+                <a class="btn btn-success" href="js/jquery.bindit.js">Download v1.1.0</a>&nbsp;
+                <a class="btn btn-success" href="http://github.com/opteemo/bindit">http://github.com/opteemo/bindit</a>
+            </div>
+
+
+            <section>
+                <h3>$.bindTempo(type, delay, fn)</h3>
+
+                <p>
+                    Useful for events triggered repeatedly such as <code>scroll</code> event or <code>mousemove</code>
+                    event.<br/>
+                    In this case, <code>fn</code> is called every <code>delay</code> milliseconds instead of every
+                    triggered event <code>type</code>.
+                </p>
+
+                <div id="bindtempo">
+
+                    <div class="round"></div>
+                </div>
+            </section>
+
+
+            <section>
+                <h3>$.bindSolo(type, delay, fn)</h3>
+
+                <p>
+                    Useful for the <code>fn</code> to call after <code>delay</code> once user completed an action such
+                    as typing or scrolling.
+                </p>
+
+                <div id="bindsolo" class="row">
+                    <div class="span5"><textarea class="input" id="text" cols="80" rows="4"></textarea></div>
+                    <div class="span5"><div class="output"></div></div>
+                </div>
+            </section>
+
+
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+</html>

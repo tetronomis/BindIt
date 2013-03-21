@@ -7,10 +7,12 @@ https://github.com/Opteemo/BindIt
   $.fn.bindTempo = (type, delay, fn) ->
     locked = false
 
-    dfn = () ->
+    dfn = (event) ->
+      element = this
+
       call = () ->
         locked = false
-        fn()
+        fn.call(element, event)
         return
 
       unless locked
@@ -18,18 +20,31 @@ https://github.com/Opteemo/BindIt
         locked = true
       return
 
-    $(this).bind(type, dfn)
+    $.each(this, (index, value)->
+      $(value).bind(type, dfn)
+      return)
+
     return
 
 
   $.fn.bindSolo = (type, delay, fn) ->
     id = null
 
-    dfn = () ->
+    dfn = (event) ->
+      element = this
+
+      call = () ->
+        fn.call(element, event)
+
       if id then window.clearTimeout(id)
-      id = window.setTimeout(fn, delay)
+      id = window.setTimeout(call, delay)
       return
 
-    $(this).bind(type, dfn)
+    $.each(this, (index, value)->
+      $(value).bind(type, dfn)
+      return)
+
     return
+
+
 )(jQuery)

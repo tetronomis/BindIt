@@ -1,0 +1,93 @@
+body > .content {
+  margin: 0 auto;
+  width: 780px; }
+
+code {
+  color: #333333; }
+
+section {
+  margin-bottom: 60px; }
+
+header {
+  padding: 40px 0;
+  border-bottom: 1px solid #999; }
+  header .logo {
+    color: #999;
+    font-size: 24px;
+    line-height: 40px; }
+
+.jumbotron {
+  margin: 60px 0; }
+  .jumbotron h1 {
+    font-size: 60px;
+    line-height: 55px;
+    margin-bottom: 30px; }
+    .jumbotron h1 .light {
+      font-size: 40px;
+      font-weight: normal;
+      color: #666; }
+
+#bindtempo {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 400px;
+  overflow: hidden;
+  position: relative; }
+  #bindtempo .round {
+    background-color: red;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 90px; }
+
+#bindsolo .input {
+  width: 100%; }
+#bindsolo .output {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 200px;
+  width: 100%; }
+  #bindsolo .output .t1 {
+    position: relative;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 15px;
+    top: 1px; }
+  #bindsolo .output .t2 {
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    top: 2px; }
+  #bindsolo .output .t3 {
+    position: relative;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 17px;
+    top: -1px; }
+  #bindsolo .output .t4 {
+    position: relative;
+    font-style: italic;
+    top: -2px; }
+  #bindsolo .output .t5 {
+    position: relative;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 15px; }
+  #bindsolo .output .t6 {
+    position: relative;
+    font-size: 16px;
+    font-style: italic;
+    top: 1px; }
+  #bindsolo .output .t7 {
+    position: relative;
+    text-transform: capitalize;
+    font-size: 17px;
+    top: -1px; }
+  #bindsolo .output .t8 {
+    position: relative;
+    font-size: 18px;
+    font-style: italic; }
+  #bindsolo .output .t9 {
+    position: relative;
+    text-transform: capitalize; }

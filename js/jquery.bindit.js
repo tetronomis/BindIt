@@ -12,31 +12,42 @@ https://github.com/Opteemo/BindIt
       var dfn, locked;
 
       locked = false;
-      dfn = function() {
-        var call;
+      dfn = function(event) {
+        var call, element;
 
+        element = this;
         call = function() {
           locked = false;
-          fn();
+          fn.call(element, event);
         };
         if (!locked) {
           window.setTimeout(call, delay);
           locked = true;
         }
       };
-      $(this).bind(type, dfn);
+      $.each(this, function(index, value) {
+        $(value).bind(type, dfn);
+      });
     };
     return $.fn.bindSolo = function(type, delay, fn) {
       var dfn, id;
 
       id = null;
-      dfn = function() {
+      dfn = function(event) {
+        var call, element;
+
+        element = this;
+        call = function() {
+          return fn.call(element, event);
+        };
         if (id) {
           window.clearTimeout(id);
         }
-        id = window.setTimeout(fn, delay);
+        id = window.setTimeout(call, delay);
       };
-      $(this).bind(type, dfn);
+      $.each(this, function(index, value) {
+        $(value).bind(type, dfn);
+      });
     };
   })(jQuery);
 
