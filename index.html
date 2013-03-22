@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all"/>
         <link rel="stylesheet" type="text/css" href="css/main.css" media="all"/>
 
-        <script src="http://code.jquery.com/jquery-1.0.1.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.bindit.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </head>
@@ -36,6 +36,17 @@
                     triggered event <code>type</code>.
                 </p>
 
+                <div class="choices">
+                    <label class="radio inline">
+                        <input type="radio" name="bindtempo" id="bindtempo1" value="" checked>
+                        $.bind()
+                    </label>
+                    <label class="radio inline">
+                        <input type="radio" name="bindtempo" id="bindtempo2" value="1">
+                        $.bindTempo()
+                    </label>
+                </div>
+
                 <div id="bindtempo">
 
                     <div class="round"></div>
@@ -51,15 +62,28 @@
                     as typing or scrolling.
                 </p>
 
+                <div class="choices">
+                    <label class="radio inline">
+                        <input type="radio" name="bindsolo" id="bindsolo1" value="" checked>
+                        $.bind()
+                    </label>
+                    <label class="radio inline">
+                        <input type="radio" name="bindsolo" id="bindsolo2" value="1">
+                        $.bindSolo()
+                    </label>
+                </div>
+
                 <div id="bindsolo" class="row">
                     <div class="span5"><textarea class="input" id="text" cols="80" rows="4"></textarea></div>
-                    <div class="span5"><div class="output"></div></div>
+                    <div class="span5">
+                        <div class="output"></div>
+                    </div>
                 </div>
             </section>
 
 
             <footer>
-
+               <a href="http://www.opteemo.fr"><img src="img/logo.jpg" /></a>
             </footer>
         </div>
     </body>
