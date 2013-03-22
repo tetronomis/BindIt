@@ -3,7 +3,7 @@
     "title": "BindIt",
     "description": "A jQuery plugin to bind events with delay.",
     "keywords": ["event", "bind", "delay"],
-    "version": "1.1.0",
+    "version": "1.1.1",
 
     "author": {
         "name": "Opteemo",
