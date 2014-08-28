@@ -26,7 +26,7 @@ https://github.com/Opteemo/BindIt
         }
       };
       $.each(this, function(index, value) {
-        $(value).bind(type, dfn);
+        $(value).on(type, dfn);
       });
     };
     return $.fn.bindSolo = function(type, delay, fn) {
@@ -46,7 +46,7 @@ https://github.com/Opteemo/BindIt
         id = window.setTimeout(call, delay);
       };
       $.each(this, function(index, value) {
-        $(value).bind(type, dfn);
+        $(value).on(type, dfn);
       });
     };
   })(jQuery);
